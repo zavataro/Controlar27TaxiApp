@@ -54,5 +54,8 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "tsx": "^4.7.2",
     "typescript": "^5.7.3"
+  },
+  "overrides": {
+    "glob": "9.0.0"
   }
 }
