@@ -32,7 +32,8 @@
     "rxjs": "~7.8.0",
     "sweetalert2": "^11.10.8",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "~0.15.0",
+    "@parcel/watcher-linux-x64-glibc": "^2.5.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.8",
