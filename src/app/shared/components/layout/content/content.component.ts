@@ -17,19 +17,19 @@ import { RouterModule } from '@angular/router';
 
 export class ContentComponent {
 
-  public innerWidth : number;
+  public innerWidth! : number;
   public footerFix = false;
   public footerLight = false;
   public footerDark : boolean = false;
-  
+
   constructor(
-    public navService: NavService, 
+    public navService: NavService,
     public layoutServices : LayoutService){
     }
 
   get layoutClass() {
     return (
-      this.layoutServices.config.settings.sidebar_type + '' 
+      this.layoutServices.config.settings.sidebar_type + ''
     );
   }
 
@@ -38,7 +38,7 @@ export class ContentComponent {
     if (window.innerWidth < 1200) {
       this.layoutServices.config.settings.sidebar_type = "page-wrapper compact-wrapper";
     }
-  } 
+  }
 
   ngDoCheck() {
     if (window.location.pathname == "/page-layout/footer-dark") {

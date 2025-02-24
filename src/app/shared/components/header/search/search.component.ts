@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 
 export class SearchComponent {
 
-  @Input() data : boolean;
+  @Input() data! : boolean;
   @Output() newItemEvent = new EventEmitter<boolean>();
 
   constructor( public searchService: SearchService){

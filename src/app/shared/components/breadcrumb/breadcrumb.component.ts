@@ -11,7 +11,7 @@ import { filter, map } from 'rxjs';
 
 export class BreadcrumbComponent {
 
-  public breadcrumbs: { parentBreadcrumb?: string; childBreadcrumb?: string; enable?: boolean };
+  public breadcrumbs!: { parentBreadcrumb?: string; childBreadcrumb?: string; enable?: boolean };
   public title: string = '';
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {

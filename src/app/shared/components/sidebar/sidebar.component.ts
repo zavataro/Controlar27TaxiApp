@@ -30,7 +30,7 @@ export class SidebarComponent {
   public itemsData: Menu[] = [];
   public searchResult: boolean = false;
   public searchResultEmpty: boolean = false;
-  public text: string;
+  public text!: string;
 
   constructor(public navService: NavService,
     private router: Router,
